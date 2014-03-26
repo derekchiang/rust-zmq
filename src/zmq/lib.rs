@@ -639,7 +639,7 @@ pub static POLLOUT : i16 = 2i16;
 pub static POLLERR : i16 = 4i16;
 
 pub struct PollItem {
-    socket: Socket_,
+    priv socket: Socket_,
     fd: c_int,
     events: i16,
     revents: i16
